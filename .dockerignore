@@ -1,0 +1,5 @@
+# Only the build recipe and dependency lock enter the context.
+**
+!Dockerfile
+!.dockerignore
+!conda-linux-aarch64.lock

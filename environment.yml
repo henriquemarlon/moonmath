@@ -1,0 +1,10 @@
+# Human-readable requirements; Docker installs the explicit package lock.
+name: sage
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - sage=10.9
+  - notebook=7
+  - nbclient

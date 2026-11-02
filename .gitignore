@@ -1,0 +1,15 @@
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+*.log
+.jupyter/
+.sage/
+*token*
+*.pem
+*.key
+# Keep the book outside this repository; use the README links.
+*.pdf

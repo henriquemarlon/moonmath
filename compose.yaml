@@ -1,0 +1,15 @@
+name: zk01
+
+services:
+  sage:
+    build: .
+    # Run natively on Apple Silicon with the locked Linux ARM64 environment.
+    platform: linux/arm64
+    init: true
+    ports:
+      - "127.0.0.1:8888:8888"
+    volumes:
+      - type: bind
+        source: ./notebooks
+        target: /home/sage/notebooks
+    stop_grace_period: 30s
